@@ -1,4 +1,4 @@
-#FuryValue
+# FuryValue
 
 Un petit addon qui calcule l'apport de stats brutes DPS des objets (ici appelé "value") pour warfury 3.3.5a (ne prend pas en compte le niveau d'objet, ou l'endurance mais bien les stats dps uniquement).
 
