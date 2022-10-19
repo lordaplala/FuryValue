@@ -1,0 +1,5 @@
+## Interface: 30300
+## Title: FuryValue
+## Notes: Un petit addon qui calcule l'apport de stats brutes DPS pour Warfury
+## Version: 0.1
+FuryValue.lua
