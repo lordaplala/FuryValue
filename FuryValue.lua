@@ -32,7 +32,7 @@ local function gearscore_program(tooltip)
             local hate = gearscore_getStat(stats, 'ITEM_MOD_HASTE_RATING_SHORT');
             local force = gearscore_getStat(stats, 'ITEM_MOD_STRENGTH_SHORT');
             local crit = gearscore_getStat(stats, 'ITEM_MOD_CRIT_RATING_SHORT');
-            local gearscore = arpen + expertise + toucher + pa / 1.8 + agi / 0.815 + armure / 64.8 + hate / 2 + force / 0.69 + crit / 0.666;
+            local gearscore = arpen + expertise + toucher + pa / 1.8 + agi / 1.2225 + armure / 64.8 + hate / 2 + force / 0.69 + crit / 0.999;
             local red = gearscore_getStat(stats, 'EMPTY_SOCKET_RED');
             local yellow = gearscore_getStat(stats, 'EMPTY_SOCKET_YELLOW');
             local blue = gearscore_getStat(stats, 'EMPTY_SOCKET_BLUE');
@@ -56,7 +56,7 @@ local function gearscore_program(tooltip)
                         gs_bonus_de_chasse = valueForce / 0.69;
                     elseif searchAgi ~= nil then
                         local valueAgi = tonumber(string.sub(bonusString, 1, searchAgi));
-                        gs_bonus_de_chasse = valueAgi / 0.815;
+                        gs_bonus_de_chasse = valueAgi / 1.2225;
                     elseif searchHate ~= nil then
                         local valueHate = tonumber(string.sub(bonusString, 1, searchHate));
                         gs_bonus_de_chasse = valueHate / 2;
@@ -71,14 +71,14 @@ local function gearscore_program(tooltip)
                         gs_bonus_de_chasse = valueExpertise;
                     elseif searchCritique ~= nil then
                         local valueCritique = tonumber(string.sub(bonusString, 1, searchCritique));
-                        gs_bonus_de_chasse = valueCritique / 0.666;
+                        gs_bonus_de_chasse = valueCritique / 0.999;
                     elseif searchArpen ~= nil then
                         local valueArpen = tonumber(string.sub(bonusString, 1, searchArpen));
                         gs_bonus_de_chasse = valueArpen;
                     end
                 end
             end
-            local gs_chasse_respectant_couleurs = red * 20 / 0.69 + yellow * 10 / 0.69 + yellow * 10 / 0.666 + blue * 10 / 0.69 + gs_bonus_de_chasse;
+            local gs_chasse_respectant_couleurs = red * 20 / 0.69 + yellow * 10 / 0.69 + yellow * 10 / 0.999 + blue * 10 / 0.69 + gs_bonus_de_chasse;
             if gs_chasse_respectant_couleurs > gs_chasse_full_force then
                 gearscore = gearscore + gs_chasse_respectant_couleurs;
             else

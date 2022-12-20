@@ -10,7 +10,7 @@ Aucune configuration requise.
 
 Mes calculs prennent en compte pas mal de variables comme la bok, buffs en raids, talents (**Armé jusqu'aux dents 3/3 et Posture berserker améliorée 5/5**), etc... :
 
-**1 value = 1 score de pénétration d'armure = 1 score d'expertise = 1 au score de toucher = 2 au score de hâte = 64.8 armure = 0.69 force = 1.8 puissance d'attaque = 0.666 au score de crit = 0.815 agilité**
+**1 value = 1 score de pénétration d'armure = 1 score d'expertise = 1 au score de toucher = 2 au score de hâte = 64.8 armure = 0.69 force = 1.8 puissance d'attaque = 0.999 au score de crit = 1.2225 agilité**
 
 Lorsque l'addon détecte des slots de gemmes, il va calculer plusieurs combinaisons à base de gemmes épiques rouges force, gemmes orange crit/force et gemmes vertes force/endu. L'addon retiendra la combinaison ayant le plus de "value" et vous indiquera s'il est rentable de gemmer en fonction du bonus de châsse ou non.
 
